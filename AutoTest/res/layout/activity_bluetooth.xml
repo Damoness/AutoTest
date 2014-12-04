@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <Button android:id="@+id/bluetooth_switch_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="20sp"
+	        android:text="@string/bluetooth_status"/>   
+        <Switch android:id="@+id/bluetooth_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/bluetooth_switch_tv"
+            android:textOn="ON"
+            android:textOff="OFF"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <Button android:id="@+id/bluetooth_switch_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="20sp"
+	        android:text="@string/bluetooth_switch_duplicate"/>   
+        <EditText android:id="@+id/bluetooth_switch_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bluetooth_switch_btn"
+            android:textSize="20sp"
+            android:hint="@string/bluetooth_switch_duplicate_hint"
+            />
+    </RelativeLayout>
+    "
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <Button android:id="@+id/bluetooth_get_addr_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="20sp"
+	        android:text="@string/bluetooth_addr"/>   
+        <TextView android:id="@+id/bluetooth_addr_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bluetooth_get_addr_btn"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <Button android:id="@+id/bluetooth_get_name_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="20sp"
+	        android:text="@string/bluetooth_get_name"/>   
+        <TextView android:id="@+id/bluetooth_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bluetooth_get_name_btn"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <Button android:id="@+id/bluetooth_modify_name_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="20sp"
+	        android:text="@string/bluetooth_modify_name"/>   
+        <EditText android:id="@+id/bluetooth_modify_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bluetooth_modify_name_btn"
+            android:textSize="20sp"
+            android:minWidth="80dip"
+            />
+    </RelativeLayout>
+    
+</LinearLayout>

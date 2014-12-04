@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:layout_marginTop="5dp"
+    >
+	
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sleeplock_title"
+        android:textSize="20dp"
+        />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/blue"
+        android:layout_alignParentBottom="true"
+        />
+    
+	<CheckBox 
+	    android:id="@+id/ckLock"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/sleeplock_keepWake" />
+	
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="30dp"
+        >
+	    
+        <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@drawable/blue"
+	        android:layout_alignParentBottom="true"
+	        />
+    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sleeplock_tips"
+	        />
+	    
+    </LinearLayout>
+
+</LinearLayout>

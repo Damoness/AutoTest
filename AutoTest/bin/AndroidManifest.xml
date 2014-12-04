@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hw.autotest"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- 系统应用需要加下面的标签，并签名 -->
+    <!-- android:sharedUserId="android.uid.system" -->
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+	<!-- 系统应用才有这个权限 -->
+	<!-- <uses-permission android:name="android.permission.REBOOT" /> -->
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hw.autotest.TestListActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        
+        <activity 
+            android:name="com.hw.autotest.IntroduceActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+      <!--********* BEGIN 字符串对比  by xiawei *******-->
+
+       <activity
+            android:name="com.hw.autotest.string.FileSelect"
+            android:label="@string/app_name" >
+        </activity>
+          	<activity  
+          	    android:name="com.hw.autotest.string.MyFileManager"  
+          	    android:theme="@android:style/Theme.Dialog">
+            </activity>
+              <!--********* end 字符串对比  by xiawei *******-->
+              
+              
+        <!--********* BEGIN 性能测试  by wangwei **************-->
+        <!-- 性能测试主界面 -->
+		<activity 
+		    android:name="com.hw.autotest.cpufull.CpuFullActivity" 
+		    android:theme="@android:style/Theme.Light.NoTitleBar"
+		    >
+		</activity>
+        <!--********* END 性能测试 by wangwei *****************-->
+        
+        
+        <!--********** BEGIN 休眠唤醒测试 by wangwei **********-->
+        <!-- 休眠唤醒Activity -->
+        <activity 
+		    android:name="com.hw.autotest.sleepwake.SleepWakeActivity" 
+		    android:theme="@android:style/Theme.Light.NoTitleBar"
+		    >
+		</activity>
+		<!-- 设备管理Receive -->
+        <receiver 
+            android:name="com.hw.autotest.sleepwake.AdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data 
+                android:name="android.app.device_admin"
+                android:resource="@xml/lock_screen" />
+            <intent-filter >
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        
+        <!-- 唤醒Receive -->
+        <receiver 
+            android:name="com.hw.autotest.sleepwake.WakeLockReceiver" >
+            <intent-filter >
+                <action android:name="android.my.wakeLock"/>
+            </intent-filter>
+        </receiver>
+        <!--********** 休眠唤醒测试 by wangwei **********-->
+        
+        
+		<!--********** BEGIN 休眠锁测试 by wangwei **********-->
+		<!-- 休眠锁Activity -->
+        <activity
+            android:name="com.hw.autotest.sleeplock.SleepLockActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            >
+        </activity>
+		<!--********** END 休眠锁测试 by wangwei ************-->
+
+
+        <!--  存储测试部分  -->
+        <activity
+            android:name="com.hw.autotest.storage.StorageTestList"
+            android:label="@string/storage_test_title" >
+        </activity>
+		
+        <activity
+            android:name="com.hw.autotest.storage.FlashUserData"
+            android:label="@string/flash_userdata_title" >
+        </activity>
+        
+        <activity
+            android:name="com.hw.autotest.storage.MountTest"
+            android:label="@string/sd_mount_test" >
+        </activity>
+		
+        
+        <!-- wifi by wudi-->
+        <activity android:name="com.hw.autotest.wifi.WifiTestActivity" >
+        </activity>
+        <activity android:name="com.hw.autotest.wifi.WifiSettingsActivity"></activity>
+        <service android:name="com.hw.autotest.wifi.AutoWifiTestService" >
+        </service>
+        <service android:name="com.hw.autotest.wifi.AutoApTestService" >
+        </service>
+        <!-- wifi test by wudi -->
+        
+        <activity android:name="com.hw.autotest.broadcast.SystemBroadcastActivity" />
+        <activity 
+            
+            android:name="com.hw.autotest.record.RecordCoordinatesActivity"
+            android:theme="@style/MyTransparentTheme"
+             />
+        
+        <!-- Bluetooth begin-->
+        <activity android:name="com.hw.autotest.bluetooth.BluetoothTest" 
+            android:label="@string/bluetooth" />
+        <!-- Bluetooth end -->
+        
+        <!-- Info -->
+        <activity android:name="com.hw.autotest.info.InfoQuery" />
+        <activity android:name="com.hw.autotest.info.Status" />
+        <!-- Info -->
+        
+        <!-- 开关机测试 -->
+        <receiver android:name="com.hw.autotest.reboot.PowerOnOffReceiverTest">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.hw.autotest.reboot.ShowRebootCountActivity" />
+        <!-- 开关机测试 -->
+        
+</application>
+
+</manifest>

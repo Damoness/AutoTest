@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AutoTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_main">自动测试</string>
+    <string name="title_activity_main">MainActivity</string>
+	<string name="title_example_text">例子</string>
+	<string name="introduce">介绍</string>
+	<string name="back">返回</string>
+	<!-- the part of storage test  -->
+	<string name="storage_test_title">存储测试</string>
+	<string name="sd_mount_test">SD卡挂/卸载</string>
+    <string name="flash_userdata_title">Flash Userdata</string>
+    <string name="flash_tv_title">Info summary:</string>
+    <string name="flash_data_space">UserData Space:</string>
+    <string name="flash_sdcard_space">Inner SdCard Space:</string>
+    <string name="flash_tv_error_info">Error info:</string>
+    <string name="flash_btn_start">Start</string>
+    <string name="flash_btn_stop">Stop</string>
+    
+    <!-- Wifi -->
+    <string name="start">打开Wifi</string>
+    <string name="scan">扫描网络</string>
+    <string name="stop">关闭Wifi</string>
+    <string name="all_network">当前没有扫描到Wifi网络</string>
+    <string name="check" >Wifi状态</string>
+    <string name="cpu_rate">cpu占用率</string>
+    <string name="wifi_info">连接信息</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="open_ap">打开Ap</string>
+    <string name="close_ap">关闭Ap</string>
+    <string name="auto_wifi_test">wifi测试</string>
+    <string name="auto_ap_test">Ap测试</string>
+    <string name="stop_service">停止</string>
+    <!-- Wifi -->
+    
+    <!-- Bluetooth -->
+    <string name="bluetooth_status">蓝牙状态</string>
+    <string name="bluetooth_addr">获取蓝牙地址</string>
+    <string name="bluetooth">蓝牙 </string>
+    <string name="bluetooth_switch_duplicate">开启关闭蓝牙</string>
+    <string name="bluetooth_switch_duplicate_hint">操作次数</string>
+    <string name="bluetooth_get_name">获取蓝牙名称</string>
+    <string name="bluetooth_modify_name">修改蓝牙名称</string>
+    <!-- Bluetooth -->
+    
+   	<!-- BEGIN Common -->
+    <string name="btnStart">开始</string>
+    <string name="bntStop">停止</string>
+    <!-- END Common -->
+    
+    <!-- BEGIN cpu性能测试 -->
+    <string name="cputest_title">CPU性能测试</string>
+    <string name="cputest_tips">输入数值（建议 30 -- 90），点击开始</string>
+    <!-- END cpu性能测试 -->
+    
+    <!-- BEGIN 休眠锁测试 -->
+    <string name="sleeplock_title">休眠锁测试</string>
+    <string name="sleeplock_tips">选中复选框，保持唤醒</string>
+    <string name="sleeplock_keepWake">保持唤醒</string>
+    <!-- END 休眠锁测试 -->
+    
+    <!-- BEGIN 休眠唤醒测试 -->
+    <string name="sleepwake_title">休眠唤醒测试</string>
+    <string name="sleepwake_activityDevice">激活设备管理</string>
+    <string name="sleepwake_tips">1.首次使用点击激活设备管理\r\n2.输入休眠唤醒时间间隔（单位：秒，建议大于3）\r\n3.点击开始</string>
+    <string name="sleepwake_timespace">间隔时间(秒)：</string>
+    <string name="sleepwake_input">3</string>
+    <!-- END 休眠唤醒测试 -->
+    
+    <!-- Info -->
+    <string name="info_test">获取系统信息</string>
+    <string name="model_number">"型号"</string>
+    <string name="baseband_version">"基带版本"</string>
+    <string name="kernel_version">"内核版本"</string>
+    <string name="build_number">"版本号"</string>
+    <string name="device_info_not_available">"不可用"</string>
+    <string name="device_status_activity_title">"状态消息"</string>
+    <string name="device_status">"状态消息"</string>
+    <string name="device_status_summary">"电池状态、网络状态和其他信息"</string>
+    <string name="device_info_default">"未知"</string>
+    <string name="cpu_title">"处理器"</string>
+    <string name="memory">"RAM"</string>
+    <string name="phone_storage">"设备存储"</string>
+    <string name="resolution_title">"分辨率"</string>
+    <string name="dual_core">"双核"</string>
+    <string name="quad_core">"四核"</string>
+    <string name="firmware_version">"Android 版本"</string>
+    <string name="emui_version">"系统版本号"</string>
+    <string name="hardware_number">硬件版本</string>
+    <string name="settings_safetylegal_title">"安全信息"</string>
+    <string name="fcc_equipment_id">"设备ID"</string>
+    <string name="battery_status_title">"电池状态"</string>
+    <string name="battery_level_title">"电池电量"</string>
+    <string name="status_operator">"网络"</string>
+    <string name="status_wifi_mac_address">"Wi-Fi MAC 地址"</string>
+    <string name="status_signal_strength">"信号强度"</string>
+    <string name="status_network_type">"设备网络类型"</string>
+    <string name="status_service_state">"服务状态"</string>
+    <string name="status_roaming">"漫游"</string>
+    <string name="status_data_state" >"移动网络状态"</string>
+    <string name="status_number">"本机号码"</string>
+    <string name="status_min_number">"MIN"</string>
+    <string name="status_msid_number">"MSID"</string>
+    <string name="status_prl_version">"PRL 版本"</string>
+    <string name="status_meid_number">"MEID"</string>
+    <string name="status_icc_id">"ICCID"</string>
+    <string name="status_bt_address">"蓝牙地址"</string>
+    <string name="status_serial_number">"序列号"</string>
+    <string name="status_unavailable">"不可用"</string>
+    <string name="status_up_time">"已开机时间"</string>
+    <string name="status_awake_time">"唤醒时间"</string>
+    <string name="status_imei">IMEI</string>
+    <string name="status_imei_sv">IMEI SV</string>
+    <string name="status_imsi" translatable="false">IMSI</string>
+    <string name="hardwareversion" translatable="false">Hardware Version</string>
+    <string name="wifi_advanced_ip_address_title">IP address</string>
+    <string name="status_wimax_mac_address">4G MAC address</string>
+    <string name="set_cpu_info">1.5GHz</string>
+    <string name="header_category_system">"系统"</string>
+    <string name="Emotion_update_to_test_version_only">"开发版"</string>
+    <string name="Emotion_update_to_stable_version_only">"稳定版"</string>
+    <string name="battery_info_screen_on">"屏幕开启时间："</string>
+    <string name="battery_info_status_unknown">"未知"</string>
+    <string name="battery_info_status_charging">"正在充电"</string>
+    <string name="battery_info_status_charging_ac">"（交流电）"</string>
+    <string name="battery_info_status_charging_usb">"(USB)"</string>
+    <string name="battery_info_status_discharging">"正在耗电"</string>
+    <string name="battery_info_status_not_charging">"未在充电"</string>
+    <string name="battery_info_status_full">"电量充足"</string>
+    <string name="battery_info_power_unplugged">"未插电"</string>
+    <string name="battery_info_power_ac">"交流电"</string>
+    <string name="battery_info_power_usb">"USB"</string>
+    <string name="battery_info_power_ac_usb">"交流电 + USB"</string>
+    <string name="battery_info_power_unknown">"未知"</string>
+    <string name="battery_info_health_unknown">"未知"</string>
+    <string name="battery_info_health_good">"正常"</string>
+    <string name="battery_info_health_overheat">"过热"</string>
+    <string name="battery_info_health_dead">"没电"</string>
+    <string name="battery_info_health_over_voltage">"过电压"</string>
+    <string name="battery_info_health_unspecified_failure">"未知错误"</string>
+    <string name="battery_info_health_cold">"电量低"</string>
+    <string name="radioInfo_unknown">"未知"</string>
+    <string name="radioInfo_service_in">"正在使用中"</string>
+    <string name="radioInfo_service_out">"不在服务区"</string>
+    <string name="radioInfo_service_off">"关闭无线通信"</string>
+    <string name="radioInfo_roaming_in">"漫游"</string>
+    <string name="radioInfo_roaming_not">"非漫游"</string>
+    <string name="radioInfo_data_disconnected">"已断开连接"</string>
+    <string name="radioInfo_data_connecting">"正在连接"</string>
+    <string name="radioInfo_data_connected">"已连接"</string>
+    <string name="radioInfo_data_suspended">"已暂停"</string>
+ 	<!-- Info -->
+  
+	<!-- wifi prefs -->
+	
+	<string name="pref_ap_title">ap设置</string>
+	<string name="pref_title_ap_ssid" >ssid</string>
+	<string name="pref_summary_ap_ssid" ></string>
+	<string name="pref_title_ap_password">密码</string>
+	<string name="pref_summary_ap_password"></string>
+	<string name="pref_title_ap_type">加密类型</string>
+	<string name="pref_summary_ap_type"></string>
+	<!-- wifi prefs -->
+    
+    <!-- wifi menu -->
+	<string name="menu_title_settings">设置</string>
+	<!-- wifi menu -->
+
+</resources>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center_horizontal"
+	android:layout_marginTop="5dp">
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cputest_title"
+        android:textSize="20dp"
+        />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/blue"
+        android:layout_alignParentBottom="true"
+        />
+    
+    <EditText
+        android:id="@+id/percent"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:numeric="integer" 
+        android:layout_marginTop="5dp"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button 
+	        android:id="@+id/start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/btnStart"/>
+    
+	    <Button 
+	        android:id="@+id/stop"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/bntStop"/>
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="30dp"
+        >
+	    
+        <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@drawable/blue"
+	        android:layout_alignParentBottom="true"
+	        />
+    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cputest_tips"
+	        />
+	    
+    </LinearLayout>
+    
+
+</LinearLayout>
